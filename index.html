@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JavaScript Animation Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS & JavaScript Animation Playground</h1>
+        <p>Explore the power of CSS animations combined with JavaScript interactivity</p>
+    </header>
+
+    <div class="container">
+        <div class="controls">
+            <h2>Animation Controls</h2>
+            
+            <div class="control-group">
+                <label for="shapeSelect">Select Shape:</label>
+                <select id="shapeSelect">
+                    <option value="box">Box</option>
+                    <option value="circle">Circle</option>
+                    <option value="triangle">Triangle</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="animationSelect">Select Animation:</label>
+                <select id="animationSelect">
+                    <option value="bounce">Bounce</option>
+                    <option value="pulse">Pulse</option>
+                    <option value="spin">Spin</option>
+                    <option value="shake">Shake</option>
+                    <option value="rainbow">Rainbow</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="speedRange">Animation Speed:</label>
+                <input type="range" id="speedRange" min="0.5" max="3" step="0.5" value="1">
+                <span id="speedValue">1x</span>
+            </div>
+            
+            <button id="applyBtn">Apply Animation</button>
+            <button id="resetBtn">Reset All</button>
+            <button id="triggerModal">Show Modal</button>
+        </div>
+
+        <div class="animation-area">
+            <div class="box transition-box" id="animatedElement"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="animationModal">
+        <div class="modal-content">
+            <h2>Animation Applied Successfully!</h2>
+            <p>You've just combined CSS animations with JavaScript control.</p>
+            <p>The animation was triggered dynamically using JavaScript by adding a CSS class to the element.</p>
+            <button class="close-btn" id="closeModal">×</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>CSS & JavaScript Animation Playground &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
